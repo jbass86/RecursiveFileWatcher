@@ -1,3 +1,6 @@
+RecursiveFileWatcher
+=======
+
 recursiveFileWatcher.js is a basic utility that will allow a user to watch any number of files nested
 down a root directory that they specify.
 
