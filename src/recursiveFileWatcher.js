@@ -27,7 +27,7 @@ var watchFunction = function(path, callback, options){
 					console.log("going to watch file " + path);
 				}
 				fs.watch(path, function(event, filename){
-					self.callback(event, filename, path);
+					self.callback(event, filename, path.substring(0, path.length - filename.length));
 				});
 			}
 		}else if (!err && stats.isDirectory()){
